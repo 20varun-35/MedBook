@@ -9,5 +9,5 @@ const connectDB = async () => {
         console.error("MongoDB connection error:", err);
     }
 };
-
+console.log("JWT SECRET:", process.env.JWT_SECRET);
 export default connectDB;
